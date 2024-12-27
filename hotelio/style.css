@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+:root {
+    --text-color: #222222;
+    --color1: #aa8453;
+    --color2: #fdece3;
+    --color3: #faf7f2;
+    --color4: #cab293;
+    --color5: #f8f5f0;
+    --color6: #f1f1f1;
+    --color7: #eaeaea;
+    --color8: #4e505c;
+    --color9: #f8f8f8;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color1);
+    transition: all .15s ease;
+}
+
+a:hover {
+    color: var(--color1);
+    opacity: 0.9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Geologica", serif;
+    background-color: var(--color9);
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    position: relative;
+    background: url('https://html.kodesolution.com/2024/hoexr-php/images/banner/banner-1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.content {
+    text-align: center;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.selectdate {
+    padding: 50px 0;
+    color: var(--text-color) !important;
+    background: var(--color5);
+}
+
+section.selectdate h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.custom-datepicker {
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+}
+
+.custom-datepicker input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+}
+
+.firstbtn {
+    background-color: var(--color1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+.firstbtn:hover {
+    opacity: .9;
+    background-color: var(--color1) !important;
+    color: #fff;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.page-title {
+    background-color: var(--theme-color2);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0 0;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.page-title:before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(17, 32, 33, 0.9), transparent);
+}
+
+.title-area-header {
+    position: static;
+    max-width: var(--container-width);
+    padding: 0px 15px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 9;
+}
+
+.page-title .title {
+    font-size: 64px;
+    color: #ffffff;
+    margin-bottom: 17px;
+}
+
+.about-section {
+    position: relative;
+    padding: 120px 0 23px;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 710px;
+    height: 545px;
+    background-image: url(https://html.kodesolution.com/2024/hoexr-php/images/background/pattern.png);
+}
+
+.contact-section {
+    position: relative;
+    padding: 120px 0 23px;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 710px;
+    height: 545px;
+    background-image: url(https://html.kodesolution.com/2024/hoexr-php/images/background/pattern.png);
+}
+
+.img-years {
+    display: flex;
+    justify-content: center;
+}
+
+.img-years img {
+    width: 300px;
+}
+
+.form-control {
+    height: calc(2.25rem + 27px);
+    padding: 15px 30px;
+    outline: 0;
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    color: #686a6f;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.contact-page {
+    z-index: 9999;
+    position: relative;
+}
+
+.contact-right-area {
+    position: relative;
+    display: block;
+    margin-top: 41px;
+}
+
+.contact-right-area li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 30px;
+}
+
+.contact-right-area li .icon {
+    height: 80px;
+    width: 80px;
+    background-color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+}
+
+.contact-right-area li .icon img {
+    width: 26px;
+}
+
+.contact-right-area .text a {
+    color: var(--color1);
+    transition: all .15s ease;
+    text-decoration: none;
+}
+
+.contact-right-area .text a:hover {
+    color: var(--color1) !important;
+    opacity: .9;
+}
+
+
+.media-page {
+    position: relative;
+    padding: 120px 0 90px;
+}
+
+
+.media-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 710px;
+    height: 545px;
+    background-image: url(https://html.kodesolution.com/2024/hoexr-php/images/background/pattern.png);
+}
+
+.media-span {
+    margin-top: 5px;
+    color: var(--color1);
+    font-weight: bold;
+    font-size: 16px;
+    transition: all .15s ease;
+}
+
+.media-span:hover {
+    color: var(--color1) !important;
+    opacity: .9;
+}
+
+.media-image img {
+    max-width: 100%;
+    width: 306px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: .5rem;
+    transition: all .15s ease;
+}
+
+.media-card:hover {
+    transform: scale(1.02);
+}
+
+.media-card {
+    margin-bottom: 1rem;
+    transition: all .15s ease;
+}
+
+.media-title {
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.media-all {
+    position: relative;
+    z-index: 100;
+}
+
+.rooms-page {
+    position: relative;
+    padding: 120px 0 90px;
+}
+
+
+.rooms-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 710px;
+    height: 545px;
+    background-image: url(https://html.kodesolution.com/2024/hoexr-php/images/background/pattern.png);
+}
+
+.rooms-card-right {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.rooms-card-left img {
+    border-radius: 8px;
+    width: 640px;
+    height: 375px;
+    object-fit: cover;
+}
+
+.rooms-all {
+    position: relative;
+    z-index: 999;
+}
+
+.rooms-ul li svg {
+    width: 20px;
+    height: 20px;
+}
+
+.logo {
+    width: 128px;
+    height: 128px;
+}
+
+.social-media ul {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media ul li {
+    padding: 10px 20px;
+    border: 1px solid var(--color1);
+    text-align: center;
+    border-radius: .5rem;
+    transition: all .15s ease;
+}
+
+.social-media ul li:hover {
+    background-color: var(--color1);
+    fill: var(--color3);
+}
+
+.social-media ul li a svg:hover {
+    fill: var(--color3);
+}
+
+.social-media svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--color1);
+}
+
+.footerlogo {
+    position: relative;
+    left: 10px;
+}
+
+.bg-sec {
+    background-color: var(--color5);
+}
+
+.midimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.booking-main {
+    position: relative;
+    padding: 111px 0 90px;
+}
+
+.bookingarea {
+    color: var(--color5);
+    font-weight: bold;
+}
+
+.bookingarea .title {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.midlinkbooking {
+    color: var(--color1);
+    transform: all .15s ease;
+    font-size: 18px;
+    border: 1px solid var(--color1);
+    padding: 20px 30px;
+    border-radius: .5rem;
+}
+
+.midlinkbooking:hover {
+    color: var(--color5) !important;
+    opacity: .9;
+    background-color: var(--color1);
+}
+
+.routearea {
+    text-transform: uppercase;
+}
+
+.booking-page {
+    position: relative;
+    padding: 111px 0 90px;
+}
+
+.booking-page-hotel-name {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.booking-hotel-name-main small {
+    border-bottom: 1px solid var(--color1);
+}
+
+.booking-hotel-name-main h2 {
+    margin-top: 5px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.img-rooms {
+    width: 848px;
+    height: 484px;
+    object-fit: cover;
+}
+
+.booking-slider-right {
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 20px 30px;
+    color: var(--text-color);
+}
+
+.booking-slider-right h4 {
+    text-align: center;
+    margin: 5px 0 20px;
+}
+
+.booking-hotel-name-main strong {
+    font-size: 24px;
+}
+
+.booking-under-carousel {
+    margin-top: 30px;
+}
+
+.booking-under-carousel p {
+    color: var(--color8);
+}
+
+.booking-room-details {
+    margin: 60px 0;
+    padding: 50px 50px 30px;
+    background-color: #fff;
+    border-radius: .5rem;
+}
+
+.booking-room-details-subtitle h3 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--color7);
+    text-transform: uppercase;
+}
+
+.booking-room-fearures-list li {
+    width: 33.33%;
+    float: left;
+    margin-bottom: 20px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.booking-room-fearures-list li img {
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height: 0;
+    max-width: 100%;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.booking-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 710px;
+    height: 545px;
+    background-image: url(https://html.kodesolution.com/2024/hoexr-php/images/background/pattern.png);
+}

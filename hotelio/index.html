@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTELIO Saniyeler İçinde +1.000.000'dan Fazla Otelde Arama Yapın</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/company/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex flex-column align-items-center">
+                <a class="navbar-brand text-white logo" href="javascript:;"><img src="images/company/logo.png"
+                        alt="Logo" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/index.html">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/about.html">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/rooms.html">Odalar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/media.html">Medya</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/contact.html">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content text-center">
+            <h1>Otel Rezervasyon Sitemize<br> Hoş Geldin!</h1>
+            <p>Kendini Sevdiğini Çok İyi Biliyoruz,<br> Nereden Biliyorsunuz Diye Sorma Çünkü Buradasın :)</p>
+            <a href="#" class="btn firstbtn">Göz At</a>
+        </div>
+    </header>
+
+
+    <section class="selectdate text-center py-5">
+        <div class="container">
+            <h2>Sonraki otel konaklamanızdan 50% oranına varan kazanç elde edin</h2>
+            <p>100'den fazla siteden otel fiyatlarını karşılaştırıyoruz</p>
+            <form class="row g-3 mt-4 align-items-center">
+                <div class="col-md-4 custom-datepicker">
+                    <input type="text" class="form-control" placeholder="Gidilecek Yer" aria-label="Gidilecek Yer">
+                </div>
+                <div class="col-md-3 custom-datepicker">
+                    <input type="date" class="form-control" aria-label="Giriş Tarihi">
+                </div>
+                <div class="col-md-3 custom-datepicker">
+                    <input type="date" class="form-control" aria-label="Çıkış Tarihi">
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="firstbtn">Ara</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="images/icons/hotel.webp" alt="Anasayfa İcon" class="mb-3" style="width: 120px;">
+                    <h5>Basit bir şekilde arayın</h5>
+                    <p>Sadece birkaç saniye için 5 milyon otelde arama yapın.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/icons/compare.webp" alt="Anasayfa Icon" class="mb-3" style="width: 120px;">
+                    <h5>Güvenli bir şekilde karşılaştırın</h5>
+                    <p>Ayda 100'den fazla siteden otel fiyatlarını karşılaştırın.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/icons/discount.webp" alt="Anasayfa Icon" class="mb-3" style="width: 120px;">
+                    <h5>Çok kazanç sağlayın</h5>
+                    <p>Ortak sitelerimizde sunulan harika rezervasyon fırsatlarını keşfedin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <h3 class="text-center mb-5">En Yakın Tarihte Müsait Oteller</h3>
+            <div id="hotelCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <div class="card">
+                                    <!--Resimlerin Otellerle Hiçbir Alakası Yoktur Sadece Otel İsimleri Alınmıştır Değerlendirmeninde Alakası Yoktur-->
+                                    <img src="images/hotels/images15.jpg" class="card-img-top" alt="Capella Bangkok">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Capella Bangkok</h5>
+                                        <p class="card-text">10.0 (Çok iyi) - Tayland</p>
+                                        <p class="text-danger">₺X.XXX</p>
+                                        <a href="#" class="btn firstbtn w-100">Fırsatı Görün</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card">
+                                    <img src="images/hotels/images11.jpg" class="card-img-top"
+                                        alt="Passalacqua - Resimler Rastgele Seçilmiştir">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Passalacqua</h5>
+                                        <p class="card-text">10.0 (Çok iyi) - İtalya</p>
+                                        <p class="text-danger">₺X.XXX</p>
+                                        <a href="#" class="btn firstbtn w-100">Fırsatı Görün</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card">
+                                    <img src="images/hotels/images2.jpg" class="card-img-top" alt="Rosewood Hong Kong">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rosewood Hong Kong</h5>
+                                        <p class="card-text">10.0 (Çok iyi) - Hong Kong</p>
+                                        <p class="text-danger">₺X.XXX</p>
+                                        <a href="#" class="btn firstbtn w-100">Fırsatı Görün</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card">
+                                    <img src="images/hotels/images13.jpg" class="card-img-top" alt="Cheval Blanc">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cheval Blanc</h5>
+                                        <p class="card-text">10.0 (Çok iyi) - Paris</p>
+                                        <p class="text-danger">₺X.XXX</p>
+                                        <a href="#" class="btn firstbtn w-100">Fırsatı Görün</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Önceki</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Sonraki</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="py-5" style="background-image: url(https://html.kodesolution.com/2024/hoexr-php/images/background/bg-booking.jpg); background-size:cover;">
+<div class="container">
+    <div class="booking-main">
+        <div class="bookingarea">
+            <div class="row align-items-center justify-content-center">
+                <div class="contact-page-left col-xl-7 col-lg-6">
+                    <div class="mb-4">
+                        <h2 class="title mb-4">Seçtiğin Otelden Fiyat Teklifi Al</h2>
+                        <small>Seçtiğin Otel Hakkında Fiyat Bilgisi veya Daha Fazla Bilgi Alabilmek İçin Sağ Taraftaki İletişim Alanını Eksiksiz ve Doğru Doldurmanız Gerekmektedir.</small>
+                    </div>
+                    <form action="javascript:;">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <input name="name" class="form-control" type="text" placeholder="İsim"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <input name="surname" class="form-control" type="text" placeholder="Soyisim"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <input name="email" class="form-control" type="email" placeholder="E-Posta"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <input name="phone" class="form-control" type="number"
+                                        placeholder="Telefon Numarası" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <select class="form-control">
+                                        <option value="Türkiye" selected>Türkiye</option>
+                                        <option value="ABD Virgin Adaları">ABD Virgin Adaları</option>
+                                        <option value="Almanya">Almanya</option>
+                                        <option value="Amerika Birleşik Devletleri">Amerika Birleşik Devletleri</option>
+                                        <option value="Andorra">Andorra</option>
+                                        <option value="Antigua ve Barbuda">Antigua ve Barbuda</option>
+                                        <option value="Arjantin">Arjantin</option>
+                                        <option value="Arnavutluk">Arnavutluk</option>
+                                        <option value="Aruba">Aruba</option>
+                                        <option value="Avustralya">Avustralya</option>
+                                        <option value="Avusturya">Avusturya</option>
+                                        <option value="Azerbaycan">Azerbaycan</option>
+                                        <option value="Bahama">Bahama</option>
+                                        <option value="Bahamas">Bahamas</option>
+                                        <option value="Bahreyn">Bahreyn</option>
+                                        <option value="Bangladeş">Bangladeş</option>
+                                        <option value="Barbados">Barbados</option>
+                                        <option value="Belçika">Belçika</option>
+                                        <option value="Belize">Belize</option>
+                                        <option value="Benin">Benin</option>
+                                        <option value="Beyaz Rusya">Beyaz Rusya</option>
+                                        <option value="Birleşik Arap Emirlikleri">Birleşik Arap Emirlikleri</option>
+                                        <option value="Bolivya">Bolivya</option>
+                                        <option value="Bosna Hersek">Bosna Hersek</option>
+                                        <option value="Brezilya">Brezilya</option>
+                                        <option value="Brunei">Brunei</option>
+                                        <option value="Bulgaristan">Bulgaristan</option>
+                                        <option value="Burma">Burma</option>
+                                        <option value="Cebelitarık">Cebelitarık</option>
+                                        <option value="Çek Cumhuriyeti">Çek Cumhuriyeti</option>
+                                        <option value="Çin">Çin</option>
+                                        <option value="Danimarka">Danimarka</option>
+                                        <option value="Dominik Cumhuriyeti">Dominik Cumhuriyeti</option>
+                                        <option value="Ekvator">Ekvator</option>
+                                        <option value="El Salvador">El Salvador</option>
+                                        <option value="Endonezya">Endonezya</option>
+                                        <option value="Eritre">Eritre</option>
+                                        <option value="Ermenistan">Ermenistan</option>
+                                        <option value="Estonya">Estonya</option>
+                                        <option value="Fas">Fas</option>
+                                        <option value="Fiji">Fiji</option>
+                                        <option value="Filipinler">Filipinler</option>
+                                        <option value="Finlandiya">Finlandiya</option>
+                                        <option value="Fransa">Fransa</option>
+                                        <option value="Fransız Polinezyası">Fransız Polinezyası</option>
+                                        <option value="Grenada">Grenada</option>
+                                        <option value="Guadalup">Guadalup</option>
+                                        <option value="Guam">Guam</option>
+                                        <option value="Guatemala">Guatemala</option>
+                                        <option value="Güney Afrika">Güney Afrika</option>
+                                        <option value="Gürcistan">Gürcistan</option>
+                                        <option value="Hırvatistan">Hırvatistan</option>
+                                        <option value="Hindistan">Hindistan</option>
+                                        <option value="Hollanda">Hollanda</option>
+                                        <option value="Hollanda Antilleri">Hollanda Antilleri</option>
+                                        <option value="Honduras">Honduras</option>
+                                        <option value="Hong Kong">Hong Kong</option>
+                                        <option value="İngiliz Virginia Adaları">İngiliz Virginia Adaları</option>
+                                        <option value="İngiltere">İngiltere</option>
+                                        <option value="İrlanda">İrlanda</option>
+                                        <option value="İspanya">İspanya</option>
+                                        <option value="İsrail">İsrail</option>
+                                        <option value="İsveç">İsveç</option>
+                                        <option value="İsviçre">İsviçre</option>
+                                        <option value="İtalya">İtalya</option>
+                                        <option value="İzlanda">İzlanda</option>
+                                        <option value="Jamaika">Jamaika</option>
+                                        <option value="Japonya">Japonya</option>
+                                        <option value="Kamboçya">Kamboçya</option>
+                                        <option value="Kanada">Kanada</option>
+                                        <option value="Katar">Katar</option>
+                                        <option value="Kayman Adaları">Kayman Adaları</option>
+                                        <option value="Kıbrıs">Kıbrıs</option>
+                                        <option value="Kolombiya">Kolombiya</option>
+                                        <option value="Kore">Kore</option>
+                                        <option value="Kosta Rika">Kosta Rika</option>
+                                        <option value="Kuveyt">Kuveyt</option>
+                                        <option value="Küba">Küba</option>
+                                        <option value="Letonya">Letonya</option>
+                                        <option value="Liechtenstein">Liechtenstein</option>
+                                        <option value="Litvanya">Litvanya</option>
+                                        <option value="Lübnan">Lübnan</option>
+                                        <option value="Lüksemburg">Lüksemburg</option>
+                                        <option value="Macaristan">Macaristan</option>
+                                        <option value="Makedonya">Makedonya</option>
+                                        <option value="Maldivler">Maldivler</option>
+                                        <option value="Malezya">Malezya</option>
+                                        <option value="Malta">Malta</option>
+                                        <option value="Mauritius">Mauritius</option>
+                                        <option value="Meksika">Meksika</option>
+                                        <option value="Mısır">Mısır</option>
+                                        <option value="Moldova">Moldova</option>
+                                        <option value="Monako">Monako</option>
+                                        <option value="Mozambik">Mozambik</option>
+                                        <option value="Nikaragua">Nikaragua</option>
+                                        <option value="Norveç">Norveç</option>
+                                        <option value="Özbekistan">Özbekistan</option>
+                                        <option value="Panama">Panama</option>
+                                        <option value="Paraguay">Paraguay</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="Polonya">Polonya</option>
+                                        <option value="Portekiz">Portekiz</option>
+                                        <option value="Porto Riko">Porto Riko</option>
+                                        <option value="Romanya">Romanya</option>
+                                        <option value="Rusya">Rusya</option>
+                                        <option value="Saint Kitts ve Nevis">Saint Kitts ve Nevis</option>
+                                        <option value="Saint Lucia">Saint Lucia</option>
+                                        <option value="San Marino">San Marino</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="Seyşel">Seyşel</option>
+                                        <option value="Singapur">Singapur</option>
+                                        <option value="Slovakya">Slovakya</option>
+                                        <option value="Slovenya">Slovenya</option>
+                                        <option value="Sri Lanka">Sri Lanka</option>
+                                        <option value="Suriye">Suriye</option>
+                                        <option value="Suudi Arabistan">Suudi Arabistan</option>
+                                        <option value="Şili">Şili</option>
+                                        <option value="Tayland">Tayland</option>
+                                        <option value="Tayvan">Tayvan</option>
+                                        <option value="Tunus">Tunus</option>
+                                        <option value="Turks ve Caicos Adaları">Turks ve Caicos Adaları</option>
+                                        <option value="Ukrayna">Ukrayna</option>
+                                        <option value="Umman">Umman</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Ürdün">Ürdün</option>
+                                        <option value="Vanuatu">Vanuatu</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                        <option value="Vietnam">Vietnam</option>
+                                        <option value="Yeni Zelanda">Yeni Zelanda</option>
+                                        <option value="Yunanistan">Yunanistan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+
+                                    <select class="form-control">
+                                        <option value="1" selected>Tek Kişi</option>
+                                        <option value="2">Çift Kişi</option>
+                                        <option value="4">4 Kişi</option>
+                                        <option value="6">6 Kişi</option>
+                                        <option value="8">8 Kişi</option>
+                                        <option value="1*">+10 Kişi</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <button type="submit" class="btn firstbtn"><span
+                                    class="btn-title">Teklif Al</span></button>
+                        </div>
+                        
+                    <div class="mb-3 text-center">
+                        <a class="midlinkbooking" href="booking.html">Rezervasyon Yapmak İçin Tıkla!</a>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section class="bg-sec py-5">
+        <div class="container">
+            <h3 class="text-center mb-5">Bu Yılın En İyi 4 Oteli</h3>
+            <div id="hotelCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <div class="card">
+                                    <!--Resimlerin Otellerle Hiçbir Alakası Yoktur Sadece Otel İsimleri Alınmıştır Değerlendirmeninde Alakası Yoktur-->
+                                    <img src="https://eduzsofsfpv.exactdn.com/wp-content/uploads/2023/09/Raffles-Singapore-hero_W50BH24-profile.jpg?strip=all&lossy=1&quality=92&webp=92&avif=80&resize=620%2C400&ssl=1"
+                                        class="card-img-top" alt="Raffles Singapore">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Raffles Singapore</h5>
+                                        <p class="card-text">10.0 (Çok iyi) - Singapur</p>
+                                        <p class="text-danger">₺X.XXX</p>
+                                        <a href="#" class="btn firstbtn w-100">Fırsatı Görün</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card">
+                                    <img src="https://eduzsofsfpv.exactdn.com/wp-content/uploads/2023/09/Soneva-Fushi-room-new_W50BH24-profile.jpg?strip=all&lossy=1&quality=92&webp=92&avif=80&resize=620%2C400&ssl=1"
+                                        class="card-img-top" alt="Soneva Fushi - Resimler Rastgele Seçilmiştir">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Soneva Fushi</h5>
+                                        <p class="card-text">10.0 (Çok iyi) - Maldivler</p>
+                                        <p class="text-danger">₺X.XXX</p>
+                                        <a href="#" class="btn firstbtn w-100">Fırsatı Görün</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card">
+                                    <img src="https://eduzsofsfpv.exactdn.com/wp-content/uploads/2023/09/Atlantis-The-Royal-hero_W50BH24-profile.jpg?strip=all&lossy=1&quality=92&webp=92&avif=80&resize=620%2C400&ssl=1"
+                                        class="card-img-top" alt="Atlantis The Royal">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Atlantis The Royal</h5>
+                                        <p class="card-text">10.0 (Çok iyi) - Dubai</p>
+                                        <p class="text-danger">₺X.XXX</p>
+                                        <a href="#" class="btn firstbtn w-100">Fırsatı Görün</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card">
+                                    <img src="https://eduzsofsfpv.exactdn.com/wp-content/uploads/2023/09/Nihi-Sumba-hero_W50BH24-profile.jpg?strip=all&lossy=1&quality=92&webp=92&avif=80&resize=620%2C400&ssl=1"
+                                        class="card-img-top" alt="Nihi Sumba">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nihi Sumba</h5>
+                                        <p class="card-text">10.0 (Çok iyi) - Endonezya</p>
+                                        <p class="text-danger">₺X.XXX</p>
+                                        <a href="#" class="btn firstbtn w-100">Fırsatı Görün</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Önceki</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Sonraki</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row text-center text-center">
+                <div class="col-md-12 mb-4">
+                    <div class="mb-3"><img src="images/company/logo.png" alt="Footer Logo" width="200px;" height="200px"
+                            class="img-fluid footerlogo"></div>
+                    <div class="social-media">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="100" height="100" viewBox="0 0 50 50">
+                                        <path
+                                            d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z">
+                                        </path>
+                                    </svg></a></li>
+                            <li><a href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="100" height="100" viewBox="0 0 50 50">
+                                        <path
+                                            d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z">
+                                        </path>
+                                    </svg></a></li>
+                            <li><a href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="100" height="100" viewBox="0 0 50 50">
+                                        <path
+                                            d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z">
+                                        </path>
+                                    </svg></a></li>
+                            <li><a href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="100" height="100" viewBox="0 0 50 50">
+                                        <path
+                                            d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                                        </path>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p class="small mb-0">&copy; 2024 HOTELIO - Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
